@@ -4,9 +4,9 @@ The Rate is specified in terms of X calls in Y time period. The throttle uses a 
 ```node
 'use strict'
 var api = require('throttlingApiClient');
-api.init('https://graph.facebook.com/v2.2', //Convenience initializer for endpoint, token and rate.
+api.init('https://graph.facebook.com/v2.2', //Convenience initializer for endpoint, token and rate
          'CAACEdEose0cBALv0O...Lp6FXbudnd00wZDZD',
-         { numberOfCalls: 5, duration:  20000 }); //Rate: 5 requests per 20 seconds.
+         { numberOfCalls: 5, duration:  20000 }); //Rate: 5 requests per 20 seconds
 function now(){
   return Math.floor(Date.now()/1000);
 }
