@@ -1,0 +1,1 @@
+'use strict'let RateLimiter = function(){};RateLimiter.prototype.submit = function(f){  //ToDo:};module.exports = RateLimiter;
