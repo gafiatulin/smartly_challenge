@@ -1,0 +1,1 @@
+{  "name" : "throttlingApiClient",  "version": "0.0.1",  "author" : "Victor Gafiatulin <gafiatulin@gmail.com>",  "main": "index.js",  "dependencies" : {    "request" : "2.51.x"  },  "repository": {    "type": "git",    "url": ""  },  "license": "MIT"}
