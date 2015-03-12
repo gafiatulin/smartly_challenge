@@ -5,7 +5,7 @@ The Rate is specified in terms of X calls in Y time period. The throttle uses a 
 'use strict'
 var api = require('throttlingApiClient');
 api.init('https://graph.facebook.com/v2.2', //Convenience initializer for endpoint, token and rate.
-         'CAACEdEose0cBALv0OINkBR3Qbv3ZCvqypDHAL6af2n0Ndd1wxmEYAmsv2inQLv1SimoUFMdD4TaMfJXvGfRa4BLvBe0Sjw3iezASZBZCo9nLR7tyYqhYFQ6jkVgZBSUZAvfvQgJKPZCeFOwHT0HuuyNERkZAZBQkzVg6uZAlPsAXlq4rWBioCZAZBUtQq4k5tLkWkXEX9oIm3TLZBUqzfZBtYJLBlCvzSr53mTLp6FXbudnd00wZDZD',
+         'CAACEdEose0cBALv0O...Lp6FXbudnd00wZDZD',
          { numberOfCalls: 5, duration:  20000 }); //Rate: 5 requests per 20 seconds.
 function now(){
   return Math.floor(Date.now()/1000);
@@ -13,13 +13,15 @@ function now(){
 var t0 = now();
 var emmiter = setInterval(
   function(){
-    api.get('/me')
-    .then(function(result){
-      console.log((now() - t0) + ' ' + result.id);
-    })
-    .catch(function(error){
-      console.log((now()- t0) + ' ' + error);
-    });
+    api.get('/me') //Immediately returns ES6 Promise
+    .then(
+      function(result){ //onFulfilled
+        console.log((now() - t0) + ' ' + result.id);
+      },
+      function(error){ //onRejected
+        console.log((now()- t0) + ' ' + error);
+      }
+    );
   },
   2000 //Emit 1 req per 2 sec
 );
