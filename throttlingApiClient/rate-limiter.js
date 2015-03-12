@@ -1,1 +1,1 @@
-'use strict'let RateLimiter = function(){};RateLimiter.prototype.submit = function(f){  //ToDo:};module.exports = RateLimiter;
+'use strict'let RateLimiter = function(rate){  if(rate) this.rate = rate;  else this.rate = {'numberOfCalls':600, 'duration': 600*1000};  this.hist = [];};RateLimiter.prototype.submit = function(f){  let self = this;  let now = Date.now();  //ToDo:};module.exports = RateLimiter;
