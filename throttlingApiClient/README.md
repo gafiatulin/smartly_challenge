@@ -1,6 +1,9 @@
 #throttlingApiClient
 The Rate is specified in terms of X calls in Y time period.
 The throttle uses a rolling time window rather than quantising time into discrete blocks. So in continuous time, the throttle is never exceeded.
+##Dependencies
+- [Request](https://github.com/request/request)
+
 ##Usage example
 ```node
 'use strict'

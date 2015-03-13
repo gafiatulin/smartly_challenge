@@ -5,7 +5,7 @@ Description of challenges is available on http://smartly.io/careers/challenges a
 
 ##Dependencies
 - **[io.js](https://iojs.org/)** / **[Node.js](http://nodejs.org/)** with ES6 (`--harmony`)
-- [Request](https://github.com/request/request)
+- Task specific dependencies
 
 ##Overview
 
