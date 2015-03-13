@@ -1,0 +1,1 @@
+{  "name" : "dbApiEndpoint",  "version": "0.0.1",  "author" : "Victor Gafiatulin <gafiatulin@gmail.com>",  "main": "index.js",  "dependencies" : {      },  "repository": {    "type": "git",    "url": "https://github.com/gafiatulin/smartly.io"  },  "license": "MIT"}
