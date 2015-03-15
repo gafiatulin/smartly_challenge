@@ -1,1 +1,1 @@
-'use strict'
+'use strict'let app = require('koa')();app.use(require('./error-handling-middleware.js')());app.use(require('./query-validating-middleware.js')());app.use(require('./mariasql-middleware.js')());app.use(require('./fetch-middleware.js')());app.listen(3000);
