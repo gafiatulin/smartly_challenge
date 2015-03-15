@@ -2,7 +2,7 @@
 
 ##Dependencies
 - [Koa](https://github.com/koajs/koa)
-- [Mariasql](https://github.com/mscdex/node-mariasql)
+- [mariasql](https://github.com/mscdex/node-mariasql)
 
 ##API request format
 `GET /api/stats?ad_ids=id1,id2,id3&start_time=YYYY-MM-DD&end_time=YYYY-MM-DD`
