@@ -1,0 +1,1 @@
+'use strict'function validate(){  return function* (next) {  }}module.exports = validate;
