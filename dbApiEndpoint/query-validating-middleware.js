@@ -1,1 +1,1 @@
-'use strict'function validate(){  return function* (next) {  }}module.exports = validate;
+'use strict'function validate(){  return function* (next) {    if(this.path !== '/api/stats') this.throw('404 / Not Found.', 404);  }}module.exports = validate;
