@@ -12,4 +12,4 @@ Description of challenges is available on http://smartly.io/careers/challenges a
 Solution to each task is situated in a separate folder:
 
 - [x] Throttling API client — `throttlingApiClient/`
-- [ ] API endpoint for aggregation over SQL database — `dbApiEndpoint/`
+- [x] API endpoint for aggregation over SQL database — `dbApiEndpoint/`
