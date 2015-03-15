@@ -1,0 +1,1 @@
+'use strict'function fetch(){  return function* (next) {  }}module.exports = fetch;
