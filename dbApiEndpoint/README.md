@@ -10,4 +10,4 @@
 ##Running API endpoint ❌ 
 Test API with data provided in [ad_statistics.tsv (52572 rows)](https://dl.dropboxusercontent.com/u/31019/smartly-challenge/ad_statistics.tsv) and [ad_actions.tsv (103602 rows)](https://dl.dropboxusercontent.com/u/31019/smartly-challenge/ad_actions.tsv)
 
-No longer available.
+**No longer available.**
